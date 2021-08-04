@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.jura {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(44, 222, 237, 1) 0%,
+    rgba(84, 170, 210, 1) 61%,
+    rgba(12, 88, 153, 1) 100%
+  );
+  position: relative;
+}
+.jura:hover {
+  animation: juros-bangavimas 5s infinite linear;
+}
+.zuvis {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  animation: zuvies-plaukimas 10s infinite linear;
+  transition: 0.4s;
+}
+.zuvis:hover {
+  background-color: rgba(12, 88, 153, 1);
+  border-radius: 50%;
+  /* transform: translate(50px, 100px); */
+}
+.zole {
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s;
+}
+.zole1 {
+  left: 20%;
+}
+.zole2 {
+  left: 70%;
+}
+.zole:hover {
+  transform: translate(30px) skewX(20deg) rotateY(360deg);
+}
+.burbuliukas {
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.5;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(158, 208, 227, 1) 65%);
+}
+.burbuliukas:hover {
+  background: rgba(12, 88, 153, 1);
+  transform: skewX(63deg) scale(2);
+}
+
+.mazas {
+  width: 15px;
+  height: 15px;
+  animation: burbuliavimas 10s infinite linear;
+}
+.didelis {
+  width: 25px;
+  height: 25px;
+  animation: burbuliavimas 10.5s infinite linear;
+}
+.vieta1 {
+  bottom: 0;
+  left: 5%;
+}
+.vieta2 {
+  bottom: 40px;
+  left: 7%;
+}
+.vieta3 {
+  bottom: 20px;
+  left: 10%;
+}
+.vieta4 {
+  bottom: 60px;
+  left: 15%;
+}
+.vieta5 {
+  bottom: 5px;
+  left: 20%;
+}
+.vieta6 {
+  bottom: 70px;
+  left: 25%;
+}
+.vieta7 {
+  bottom: 0px;
+  left: 65%;
+}
+.vieta8 {
+  bottom: 100px;
+  left: 70%;
+}
+.vieta9 {
+  bottom: 30px;
+  left: 75%;
+}
+.vieta10 {
+  bottom: 50px;
+  left: 77%;
+}
+.vieta11 {
+  bottom: 10px;
+  left: 80%;
+}
+.vieta12 {
+  bottom: 4px;
+  left: 85%;
+}
+@keyframes zuvies-plaukimas {
+  0% {
+    transform: translateX(20px);
+  }
+  10% {
+    transform: translateX(10vw) translateY(10px) rotateZ(10deg);
+  }
+  20% {
+    transform: translateX(20vw) translateY(30px) rotateZ(20deg);
+  }
+
+  30% {
+    transform: translateX(30vw) translateY(50px) rotateZ(30deg) scaleY(0.7);
+  }
+  40% {
+    transform: translateX(40vw) translateY(70px) rotateZ(20deg);
+  }
+  50% {
+    transform: translateX(50vw) translateY(50px) rotateZ(10deg);
+  }
+  60% {
+    transform: translateX(60vw) translateY(30px) rotateZ(-10deg) scaleY(-0.7);
+  }
+  70% {
+    transform: translateX(70vw) translateY(10px) rotateZ(10deg);
+  }
+  80% {
+    transform: translateX(80vw) translateY(20px) rotateZ(10deg);
+  }
+  90% {
+    transform: translateX(90vw) translateY(10px) rotateZ(10deg) scaleY(0.7);
+  }
+
+  100% {
+    transform: translateX(100vw) translateY(0px) rotateZ(30deg);
+  }
+}
+
+@keyframes burbuliavimas {
+  10% {
+    transform: translateY(-10vh);
+  }
+  20% {
+    transform: translateY(-20vh) translateX(15px);
+  }
+  30% {
+    transform: translateY(-30vh) translateX(25px);
+  }
+  40% {
+    transform: translateY(-40vh) translateX(15px);
+  }
+  50% {
+    transform: translateY(-50vh) translateX(5px);
+  }
+  60% {
+    transform: translateY(-60vh) translateX(10px);
+  }
+
+  70% {
+    transform: translateY(-70vh) translateX(30px);
+  }
+  80% {
+    transform: translateY(-80vh) translateX(15px);
+  }
+  90% {
+    transform: translateY(-90vh) translateX(25px);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(15px);
+  }
+}
+@keyframes juros-bangavimas {
+  from {
+    background: linear-gradient(
+      180deg,
+      rgba(44, 222, 237, 1) 0%,
+      rgba(84, 170, 210, 1) 61%,
+      rgba(12, 88, 153, 1) 100%
+    );
+  }
+  to {
+    background: linear-gradient(
+      180deg,
+      rgb(27, 185, 199) 0%,
+      rgb(49, 120, 153) 61%,
+      rgb(8, 54, 95) 100%
+    );
+  }
+}
